@@ -88,7 +88,6 @@ allprojects {
         maven {
             name = "Bluexin"
             url = uri("http://jecdl.test.upcdn.net/repository/releases/")
-            allowInsecureProtocol = true
         }
         maven {
             name = "Sonatype OSSRH (Snapshots)"
@@ -187,6 +186,7 @@ allprojects {
 
         repositories {
             maven {
+                allowInsecureProtocol = true
                 url = if (hasProperty("local_maven")) uri("file://${property("local_maven")}")
                 else uri("file://$buildDir/.m2")
             }
