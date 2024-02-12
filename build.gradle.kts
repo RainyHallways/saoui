@@ -88,6 +88,7 @@ allprojects {
         maven {
             name = "Bluexin"
             url = uri("http://jecdl.test.upcdn.net/repository/releases/")
+            allowInsecureProtocol = true
         }
         maven {
             name = "Sonatype OSSRH (Snapshots)"
