@@ -8,6 +8,8 @@
 name: Gradle Package
 
 on:
+  push:
+    branches: [ 2.0-1.19.4-port ]
   workflow_dispatch: {}
 
 jobs:
