@@ -35,6 +35,10 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
+    - name: Archive binaries
+      run: |
+        tar -czf upload.tar.gz *
+
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Release
@@ -44,4 +48,4 @@ jobs:
       with:
         tag_name: 1.19.4
         files: |
-          build/libs/*
+          upload.tar.gz
