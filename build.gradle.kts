@@ -74,41 +74,50 @@ allprojects {
 
         maven {
             name = "Sponge / Mixin"
+            allowInsecureProtocol = true
             url = uri("https://repo.spongepowered.org/repository/maven-public/")
         }
 
         maven {
             name = "BlameJared Maven (CrT / Bookshelf)"
+            allowInsecureProtocol = true
             url = uri("https://maven.blamejared.com")
         }
         /*maven {
             name = "Tencao Maven"
+            allowInsecureProtocol = true
             url = uri("https://maven.tencao.com/repository/releases/")
         }*/
         maven {
             name = "Bluexin"
+            allowInsecureProtocol = true
             url = uri("http://jecdl.test.upcdn.net/repository/releases/")
         }
         maven {
             name = "Sonatype OSSRH (Snapshots)"
+            allowInsecureProtocol = true
             url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
         }
         ivy {
             // Pulled from https://github.com/MightyPirates/OpenComputers/blob/1c0dc67182292895495cb0d421ec0f529d243d74/build.gradle
             name = "asie dependency mirror"
+            allowInsecureProtocol = true
             artifactPattern("https://asie.pl/javadeps/[module]-[revision](-[classifier]).[ext]")
             metadataSources.artifact()
         }
         maven {
             name = "JitPack"
+            allowInsecureProtocol = true
             url = uri("https://jitpack.io")
         }
         maven {
             name = "https://github.com/pdvrieze/xmlutil"
+            allowInsecureProtocol = true
             url = uri("https://s01.oss.sonatype.org/content/repositories/releases/")
         }
         maven {
             url = uri("https://maven.saps.dev/releases")
+            allowInsecureProtocol = true
             content {
                 includeGroup("dev.latvian.mods")
                 includeGroup("dev.ftb.mods")
@@ -116,6 +125,7 @@ allprojects {
         }
         maven {
             name = "Modrinth"
+            allowInsecureProtocol = true
             url = uri("https://api.modrinth.com/maven")
             content {
                 includeGroup("maven.modrinth")
