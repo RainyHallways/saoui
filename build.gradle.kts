@@ -87,7 +87,7 @@ allprojects {
         }*/
         maven {
             name = "Bluexin"
-            url = uri("https://maven.bluexin.be/repository/releases/")
+            url = uri("http://jecdl.test.upcdn.net/repository/releases/")
         }
         maven {
             name = "Sonatype OSSRH (Snapshots)"
